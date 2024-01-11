@@ -125,29 +125,29 @@ public class Kotik {
         this.satiety += satiety;
     }
 
-    // ===================================================================================================================
-    // = Implementation
-    // ===================================================================================================================
-
-    private boolean play() {
+    public boolean play() {
         return action(name, "играет");
     }
 
-    private boolean sleep() {
+    public boolean sleep() {
         return action(name, "спит");
     }
 
-    private boolean wash() {
+    public boolean wash() {
         return action(name, "моется");
     }
 
-    private boolean walk() {
+    public boolean walk() {
         return action(name, "гуляет");
     }
 
-    private boolean hunt() {
+    public boolean hunt() {
         return action(name, "охотится");
     }
+
+    // ===================================================================================================================
+    // = Implementation
+    // ===================================================================================================================
 
     private boolean action(String name, String action) {
         if (satiety > 0) {
